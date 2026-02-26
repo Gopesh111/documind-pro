@@ -1,9 +1,0 @@
-streamlit
-langchain
-langchain-community
-langchain-google-genai
-faiss-cpu
-pypdf
-scikit-learn
-numpy
-python-dotenv

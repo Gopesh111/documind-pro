@@ -1,0 +1,38 @@
+# --- Python Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# --- Security & Credentials (CRITICAL) ---
+# Never commit your actual API keys
+.env
+.env.local
+.env.secret
+
+# --- Project Specifics ---
+# Local temporary storage for the Zero-Retention policy
+temp_uploads/
+temp_test_uploads/
+
+# --- Vector Database Storage ---
+# We don't commit local FAISS indexes as they are generated per session
+*.faiss
+*.index
+*.pkl
+
+# --- IDE & OS Junk ---
+.vscode/
+.idea/
+.DS_Store
+*.swp
+Thumbs.db
+
+# --- Logs & Performance ---
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
